@@ -1,0 +1,17 @@
+.reviews-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0 auto; 
+  }
+  
+  
+
+/*  responsiveness*/
+@media (max-width: 768px) {
+  .reviews-list {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+  }
+}
