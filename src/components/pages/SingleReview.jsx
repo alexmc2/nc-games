@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getReviewById } from '../api';
+import { getReviewById } from '../../api';
 import './SingleReview.css';
 
 const SingleReview = () => {
@@ -26,17 +26,15 @@ const SingleReview = () => {
   }
 
   return (
-    <div className="single-review-page">
-      <div className="game-review">
-        <img src={review.review_img_url} alt={review.title} />
-        <h2>{review.title}</h2>
-        <p>By: {review.owner}</p>
-        <p>Created at: {review.created_at}</p>
-        <p>{review.review_body}</p>
-        <p>Comments: {review.comment_count}</p>
-        <p>Votes: {review.votes}</p>
-        <p>Designer: {review.designer}</p>
-      </div>
+    <div className="game-review">
+      <img src={review.review_img_url} alt={review.title} />
+      <h2>{review.title}</h2>
+      <p>By: {review.owner}</p>
+      <p>Created at: {review.created_at}</p>
+      <p>{review.review_body}</p>
+      <p>Comments: {review.comment_count}</p>
+      <p>Votes: {review.votes}</p>
+      <p>Designer: {review.designer}</p>
     </div>
   );
 };

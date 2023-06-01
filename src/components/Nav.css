@@ -1,0 +1,22 @@
+.navbar {
+  background-color: rgb(251, 251, 251);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  align-self: flex-start;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.navbar-content a:hover {
+  color: #777;
+}
