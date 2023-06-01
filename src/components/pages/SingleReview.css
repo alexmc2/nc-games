@@ -1,23 +1,23 @@
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
-
-/* .single-review-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
+.single-review-page {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 1.2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 500vh;
+  margin-top: 5px;
+}
 
 .game-review {
   background-color: #f2f2f2;
   border-radius: 10px;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   max-width: 800px;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .game-review h2 {
@@ -35,4 +35,12 @@
   object-fit: cover;
   border-radius: 10px;
   margin-top: 1rem;
+  color: #333;
+}
+.comments-section {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: left;
+  max-width: 800px;
 }

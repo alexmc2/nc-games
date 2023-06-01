@@ -10,3 +10,7 @@ export const getReviews = () => {
 export const getReviewById = (id) => {
   return api.get(`/api/reviews/${id}`);
 };
+
+export const getCommentsByReviewId = (id) => {
+  return api.get(`/api/reviews/${id}/comments`);
+};
