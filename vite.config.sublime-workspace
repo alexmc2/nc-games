@@ -1,0 +1,193 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/alex/Documents/sql code",
+		"/home/alex/Downloads/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/React - The Complete Guide (incl Hooks, React Router, Redux).txt",
+		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/0. Websites you may like/[CourseClub.Me].url",
+		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/0. Websites you may like/[GigaCourse.Com].url",
+		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/React - The Complete Guide (incl Hooks, React Router, Redux).txt",
+		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/lesson8.mp4",
+		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/lesson11.mp4",
+		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/lesson15.mp4",
+		"/home/alex/package-lock.json",
+		"/home/alex/package.json",
+		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/09 - Asynchronous JavaScript/004 Promises_en.srt",
+		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/02 - JavaScript Foundation/external-assets-links.txt",
+		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/index.html",
+		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/Download Paid Udemy Courses For Free.url",
+		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/01 - Introduction/001 How To Succeed In This Course_en.srt",
+		"/home/alex/Northcoders/intro-week/git-practice/films.txt/films.txt",
+		"/home/alex/Northcoders/intro-week/git-practice/snacks.txt/snacks.txt",
+		"/home/alex/Northcoders/fundamentals/fun-purer-functions/raiseSalaries.js",
+		"/home/alex/Desktop/Obsidian Vault - Northcoders Bootcamp/2023-04-04.md",
+		"/home/alex/Desktop/Northcoders/precourse/precourse-javascript/advanced-challenges/advanced-challenges.js",
+		"/home/alex/Northcoders/intro-week/questions.txt",
+		"/home/alex/intro-week-git-workshop/function/intro-day-2/functions/section-1/exercises.js",
+		"/home/alex/Downloads/Screenshot from 2023-04-12 11-33-16.txt",
+		"/media/alex/0040-4C80/The Complete JavaScript Course 2022 From Zero to Expert!/14 Object-Oriented Programming (OOP) With JavaScript/218 Inheritance Between _Classes__ Constructor Functions.en_US.srt",
+		"/media/alex/0040-4C80/The Complete JavaScript Course 2022 From Zero to Expert!/14 Object-Oriented Programming (OOP) With JavaScript/208 Constructor Functions and the new Operator.en_US.srt",
+		"/media/alex/B419-6E93/AlexLaptop/duplicity-full.20230406T120234Z.manifest.gpg",
+		"/home/alex/dictionary.txt"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "vite.config.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
