@@ -7,3 +7,6 @@ const api = axios.create({
 export const getReviews = () => {
   return api.get('/api/reviews');
 };
+export const getReviewById = (id) => {
+  return api.get(`/api/reviews/${id}`);
+};

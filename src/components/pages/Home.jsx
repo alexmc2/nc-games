@@ -1,17 +1,10 @@
 import React from 'react';
-import ReviewCard from '../Reviews';
-import './Home.css';
+import AllReviews from '../AllReviews';
 
-const Home = ({ reviews, isLoading }) => {
-  if (isLoading) {
-    return <p>Loading reviews...</p>;
-  }
-
+const Home = () => {
   return (
-    <div className="reviews-list">
-      {reviews.map((review) => (
-        <ReviewCard key={review.review_id} review={review} />
-      ))}
+    <div >
+      <AllReviews />
     </div>
   );
 };

@@ -1,31 +1,19 @@
-import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Home from '../src/components/pages/Home';
-import * as api from './api';
+import SingleReview from './components/pages/SingleReview';
 import './App.css';
+import Navbar from './components/Nav';
 
 function App() {
-  const [reviews, setReviews] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);  
-
-  useEffect(() => {
-    api.getReviews()
-      .then((res) => {
-        setReviews(res.data.reviews);
-        setIsLoading(false); 
-      })
-      .catch((err) => {
-        console.log(err);
-        setIsLoading(false);
-      });
-  }, []);
-
   return (
     <div className="app">
-      <Home reviews={reviews} isLoading={isLoading} />
+      <Navbar />
+      <Routes>
+        <Route path="/reviews/:review_id" element={<SingleReview />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
-
-
