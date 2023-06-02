@@ -9,6 +9,7 @@ const SingleReview = () => {
   const [isLoading, setIsLoading] = useState(true);
   let { review_id } = useParams();
   const [comments, setComments] = useState([]);
+  const [isCommentsLoading, setIsCommentsLoading] = useState(true);
 
   useEffect(() => {
     getReviewById(review_id)
@@ -25,12 +26,14 @@ const SingleReview = () => {
 
   useEffect(() => {
     if (review) {
+      setIsCommentsLoading(true);
       getCommentsByReviewId(review_id)
         .then((res) => {
           setComments(res.data.comments);
         })
         .catch((err) => {
-          console.log(err);
+          setIsCommentsLoading(false);
+          alert('An error occurred!');
         });
     }
   }, [review, review_id]);
@@ -52,9 +55,13 @@ const SingleReview = () => {
         <p>Designer: {review.designer}</p>
       </div>
       <div className="comments-section">
-        {comments.map((comment) => (
-          <CommentCard key={comment.comment_id} comment={comment} />
-        ))}
+        {isCommentsLoading ? (
+          <p>Loading comments...</p>
+        ) : (
+          comments.map((comment) => (
+            <CommentCard key={comment.comment_id} comment={comment} />
+          ))
+        )}
       </div>
     </div>
   );

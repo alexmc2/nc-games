@@ -18,6 +18,7 @@
   max-width: 800px;
   margin-bottom: 20px;
   margin-top: 100px;
+  color: #333333bd;
 }
 
 .game-review h2 {
@@ -43,4 +44,5 @@
   padding: 2rem;
   text-align: left;
   max-width: 800px;
+  color: #000000ad;
 }
