@@ -33,19 +33,23 @@ function VoteHandler({ review_id, votes }) {
       });
   };
 
-  const disabledVote = voteChange !== 0; 
+  const disabledVote = voteChange !== 0;
 
   return (
     <div>
       <button
-        className="vote-button vote-button-upvote"
+        className={`vote-button vote-button-upvote ${
+          disabledVote ? 'vote-button-disabled' : ''
+        }`}
         onClick={upVote}
         disabled={disabledVote}
       >
         👍
       </button>
       <button
-        className="vote-button vote-button-downvote"
+        className={`vote-button vote-button-downvote ${
+          disabledVote ? 'vote-button-disabled' : ''
+        }`}
         onClick={downVote}
         disabled={disabledVote}
       >

@@ -10,11 +10,20 @@
 }
 
 .vote-button-upvote {
-  background-color: rgb(33, 121, 33);
+  background-color: rgb(49, 172, 49);
   color: white;
 }
 
 .vote-button-downvote {
-  background-color: rgb(179, 75, 75);
+  background-color:  rgb(187, 22, 22);
   color: white;
+}
+
+
+.vote-button-upvote:active {
+  background-color: rgb(143, 221, 143);
+}
+
+.vote-button-downvote:active {
+  background-color: rgb(233, 141, 141);
 }

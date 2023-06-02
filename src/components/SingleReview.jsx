@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getReviewById, getCommentsByReviewId } from '../api';
+import { getReviewById } from '../api';
 import '../styles/SingleReview.css';
-import CommentCard from './CommentCard';
 import VoteHandler from '../components/VoteHandler';
+import Comments from './Comments';
 
 const SingleReview = () => {
   const [review, setReview] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  let { review_id } = useParams();
-  const [comments, setComments] = useState([]);
-  const [isCommentsLoading, setIsCommentsLoading] = useState(true);
+  const { review_id } = useParams();
 
   useEffect(() => {
     getReviewById(review_id)
@@ -23,23 +21,6 @@ const SingleReview = () => {
         setIsLoading(false);
       });
   }, [review_id]);
-
-  useEffect(() => {
-    if (review) {
-      setIsCommentsLoading(true);
-      getCommentsByReviewId(review_id)
-        .then((res) => {
-          setComments(res.data.comments);
-          setIsCommentsLoading(false);
-        })
-        .catch((err) => {
-          if (err.response && err.response.data.msg !== 'Not found!') {
-            alert('An error occurred while fetching the comments!');
-          }
-          setIsCommentsLoading(false);
-        });
-    }
-  }, [review, review_id]);
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -61,19 +42,10 @@ const SingleReview = () => {
           <p>Designer: {review.designer}</p>
         </div>
       </div>
-      <div className="comments-section">
-        {isCommentsLoading ? (
-          <p>Loading comments...</p>
-        ) : comments.length > 0 ? (
-          comments.map((comment) => (
-            <CommentCard key={comment.comment_id} comment={comment} />
-          ))
-        ) : (
-          <p>Be the first to write a comment!</p>
-        )}
-      </div>
+      <Comments reviewId={review_id} />
     </div>
   );
 };
 
 export default SingleReview;
+

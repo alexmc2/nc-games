@@ -1,0 +1,37 @@
+.review-card {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  padding-bottom: 1rem;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(66, 29, 29, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.review-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.review-card-content {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.review-card-content-author,
+.review-card-content-created-at,
+.review-card-content-votes,
+.review-card-content-comments {
+  font-size: 0.9rem;
+}
