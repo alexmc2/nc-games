@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(153, 153, 153);
+  background-color: rgb(251, 251, 251);
   height: 60px;
   position: fixed;
   width: 100%;
@@ -13,7 +13,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
