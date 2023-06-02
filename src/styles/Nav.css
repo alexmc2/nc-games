@@ -1,6 +1,6 @@
 .navbar {
   background-color: rgb(251, 251, 251);
-  height: 80px;
+  height: 60px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,9 +15,9 @@
   height: 100%;
   width: 80%;
   margin: auto;
-  font-size: 1.5rem;
 }
 
 .navbar-content a:hover {
   color: #777;
 }
+

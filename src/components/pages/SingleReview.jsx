@@ -9,7 +9,7 @@ const SingleReview = () => {
   const [isLoading, setIsLoading] = useState(true);
   let { review_id } = useParams();
   const [comments, setComments] = useState([]);
- 
+  const [isCommentsLoading, setIsCommentsLoading] = useState(true);
 
   useEffect(() => {
     getReviewById(review_id)
@@ -26,12 +26,17 @@ const SingleReview = () => {
 
   useEffect(() => {
     if (review) {
+      setIsCommentsLoading(true);
       getCommentsByReviewId(review_id)
         .then((res) => {
           setComments(res.data.comments);
+          setIsCommentsLoading(false);
         })
         .catch((err) => {
-          console.log(err);
+          if (err.response && err.response.data.msg !== 'Not found!') {
+            alert('An error occurred while fetching the comments!');
+          }
+          setIsCommentsLoading(false);
         });
     }
   }, [review, review_id]);
@@ -44,20 +49,18 @@ const SingleReview = () => {
     <div className="single-review-page">
       <div className="game-review">
         <img src={review.review_img_url} alt={review.title} />
-        <div className="review-content">
-          <h2>{review.title}</h2>
-          <p>By: {review.owner}</p>
-          <p>Created at: {review.created_at}</p>
-          <div className="review-body-and-votes">
-            <p>{review.review_body}</p>
-            <VoteHandler review_id={review_id} votes={review.votes} />
-          </div>
-          <p>Comments: {review.comment_count}</p>
-          <p>Designer: {review.designer}</p>
-        </div>
+        <h2>{review.title}</h2>
+        <p>By: {review.owner}</p>
+        <p>Created at: {review.created_at}</p>
+        <p>{review.review_body}</p>
+        <p>Comments: {review.comment_count}</p>
+        <p>Votes: {review.votes}</p>
+        <p>Designer: {review.designer}</p>
       </div>
       <div className="comments-section">
-        {comments.length > 0 ? (
+        {isCommentsLoading ? (
+          <p>Loading comments...</p>
+        ) : comments.length > 0 ? (
           comments.map((comment) => (
             <CommentCard key={comment.comment_id} comment={comment} />
           ))
