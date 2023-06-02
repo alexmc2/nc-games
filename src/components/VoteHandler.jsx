@@ -6,7 +6,7 @@ function VoteHandler({ review_id, votes }) {
   const [voteChange, setVoteChange] = useState(0);
 
   const upVote = () => {
-    if (voteChange !== 0) return; 
+    if (voteChange !== 0) return;
     setVoteChange(1);
     updateReviewVotes(review_id, 1)
       .then((res) => {
@@ -20,7 +20,7 @@ function VoteHandler({ review_id, votes }) {
   };
 
   const downVote = () => {
-    if (voteChange !== 0) return; 
+    if (voteChange !== 0) return;
     setVoteChange(-1);
     updateReviewVotes(review_id, -1)
       .then((res) => {
@@ -42,14 +42,14 @@ function VoteHandler({ review_id, votes }) {
         onClick={upVote}
         disabled={disabledVote}
       >
-        Upvote
+        👍
       </button>
       <button
         className="vote-button vote-button-downvote"
         onClick={downVote}
         disabled={disabledVote}
       >
-        Downvote
+        👎
       </button>
       <p>Votes: {votes + voteChange}</p>
     </div>

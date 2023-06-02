@@ -4,8 +4,16 @@ import * as api from '../api';
 import '../styles/AllReviews.css';
 
 const ReviewCard = ({ review }) => {
-  const { review_id, title, owner, review_img_url, created_at, votes, comment_count } = review;
-  
+  const {
+    review_id,
+    title,
+    owner,
+    review_img_url,
+    created_at,
+    votes,
+    comment_count,
+  } = review;
+
   return (
     <Link to={`/reviews/${review_id}`} className="review-card">
       <img src={review_img_url} alt={title} className="review-card-image" />
