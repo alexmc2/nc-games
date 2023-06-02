@@ -6,17 +6,18 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-  max-height: 100vh;
+
   padding-top: 150px;
 }
 
 .review-card {
-  border: 1px solid #e2e8f0;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   text-decoration: none;
   color: inherit;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .review-card:hover {

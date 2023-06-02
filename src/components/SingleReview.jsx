@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getReviewById, getCommentsByReviewId } from '../../api';
-import './SingleReview.css';
-import CommentCard from '../CommentCard';
+import { getReviewById, getCommentsByReviewId } from '../api';
+import '../styles/SingleReview.css';
+import CommentCard from './CommentCard';
+import VoteHandler from '../components/VoteHandler';
 
 const SingleReview = () => {
   const [review, setReview] = useState(null);
@@ -14,7 +15,6 @@ const SingleReview = () => {
     getReviewById(review_id)
       .then((res) => {
         setReview(res.data.review);
-        console.log(res.data.review);
         setIsLoading(false);
       })
       .catch((err) => {
@@ -43,18 +43,26 @@ const SingleReview = () => {
     <div className="single-review-page">
       <div className="game-review">
         <img src={review.review_img_url} alt={review.title} />
-        <h2>{review.title}</h2>
-        <p>By: {review.owner}</p>
-        <p>Created at: {review.created_at}</p>
-        <p>{review.review_body}</p>
-        <p>Comments: {review.comment_count}</p>
-        <p>Votes: {review.votes}</p>
-        <p>Designer: {review.designer}</p>
+        <div className="review-content">
+          <h2>{review.title}</h2>
+          <p>By: {review.owner}</p>
+          <p>Created at: {review.created_at}</p>
+          <div className="review-body-and-votes">
+            <p>{review.review_body}</p>
+            <VoteHandler review_id={review_id} votes={review.votes} />
+          </div>
+          <p>Comments: {review.comment_count}</p>
+          <p>Designer: {review.designer}</p>
+        </div>
       </div>
       <div className="comments-section">
-        {comments.map((comment) => (
-          <CommentCard key={comment.comment_id} comment={comment} />
-        ))}
+        {comments.length > 0 ? (
+          comments.map((comment) => (
+            <CommentCard key={comment.comment_id} comment={comment} />
+          ))
+        ) : (
+          <p>Be the first to write a comment!</p>
+        )}
       </div>
     </div>
   );

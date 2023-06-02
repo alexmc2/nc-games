@@ -1,5 +1,5 @@
 import React from 'react';
-import AllReviews from '../AllReviews';
+import AllReviews from './AllReviews';
 
 const Home = () => {
   return (

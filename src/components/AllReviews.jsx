@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as api from '../api';
-import './AllReviews.css';
+import '../styles/AllReviews.css';
 
 const ReviewCard = ({ review }) => {
   const { review_id, title, owner, review_img_url, created_at, votes, comment_count } = review;
