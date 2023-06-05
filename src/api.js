@@ -18,3 +18,15 @@ export const getCommentsByReviewId = (id) => {
 export const updateReviewVotes = (id, inc_votes) => {
   return api.patch(`/api/reviews/${id}`, { inc_votes });
 };
+
+export const postCommentByReviewId = (review_id, comment) => {
+  return api.post(`/api/reviews/${review_id}/comments`, comment);
+};
+
+export const fetchUsers = () => {
+  return api.get('/api/users');
+};
+
+export const fetchUserByUsername = (username) => {
+  return api.get(`/api/users/${username}`);
+};

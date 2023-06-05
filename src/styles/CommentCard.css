@@ -4,3 +4,30 @@
   padding: 1rem;
   margin-bottom: 20px;
 }
+.comment-card label {
+  font-weight: bold;
+}
+
+.comment-card input,
+.comment-card textarea {
+  width: 95%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-card button {
+  padding: 0.5rem 1rem;
+  background-color: #428bca;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.comment-card label {
+  font-weight: bold;
+}
