@@ -52,8 +52,3 @@
 
 
 
-@media screen and (max-width: 768px) {
-  .review-card {
-    max-width: 90vw;
-  }
-}
