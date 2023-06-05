@@ -4,7 +4,10 @@
   gap: 3rem;
 
   box-sizing: border-box;
-  max-width: 80%;
+  width: 120vh;
+  justify-content: center; 
+
+  
   
 
 
