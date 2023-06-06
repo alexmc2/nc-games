@@ -39,35 +39,7 @@
 		"status_bar_visible": false
 	},
 	"file_history":
-	[
-		"/home/alex/Documents/sql code",
-		"/home/alex/Downloads/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/React - The Complete Guide (incl Hooks, React Router, Redux).txt",
-		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/0. Websites you may like/[CourseClub.Me].url",
-		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/0. Websites you may like/[GigaCourse.Com].url",
-		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/React - The Complete Guide (incl Hooks, React Router, Redux).txt",
-		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/lesson8.mp4",
-		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/lesson11.mp4",
-		"/media/alex/4A21-0000/[GigaCourse.Com] Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)/lesson15.mp4",
-		"/home/alex/package-lock.json",
-		"/home/alex/package.json",
-		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/09 - Asynchronous JavaScript/004 Promises_en.srt",
-		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/02 - JavaScript Foundation/external-assets-links.txt",
-		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/index.html",
-		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/Download Paid Udemy Courses For Free.url",
-		"/media/alex/0040-4C80/GetFreeCourses.Co-Udemy-JavaScript The Advanced Concepts (2022 Update)/01 - Introduction/001 How To Succeed In This Course_en.srt",
-		"/home/alex/Northcoders/intro-week/git-practice/films.txt/films.txt",
-		"/home/alex/Northcoders/intro-week/git-practice/snacks.txt/snacks.txt",
-		"/home/alex/Northcoders/fundamentals/fun-purer-functions/raiseSalaries.js",
-		"/home/alex/Desktop/Obsidian Vault - Northcoders Bootcamp/2023-04-04.md",
-		"/home/alex/Desktop/Northcoders/precourse/precourse-javascript/advanced-challenges/advanced-challenges.js",
-		"/home/alex/Northcoders/intro-week/questions.txt",
-		"/home/alex/intro-week-git-workshop/function/intro-day-2/functions/section-1/exercises.js",
-		"/home/alex/Downloads/Screenshot from 2023-04-12 11-33-16.txt",
-		"/media/alex/0040-4C80/The Complete JavaScript Course 2022 From Zero to Expert!/14 Object-Oriented Programming (OOP) With JavaScript/218 Inheritance Between _Classes__ Constructor Functions.en_US.srt",
-		"/media/alex/0040-4C80/The Complete JavaScript Course 2022 From Zero to Expert!/14 Object-Oriented Programming (OOP) With JavaScript/208 Constructor Functions and the new Operator.en_US.srt",
-		"/media/alex/B419-6E93/AlexLaptop/duplicity-full.20230406T120234Z.manifest.gpg",
-		"/home/alex/dictionary.txt"
-	],
+
 	"find":
 	{
 		"height": 26.0
