@@ -30,3 +30,11 @@ export const fetchUsers = () => {
 export const fetchUserByUsername = (username) => {
   return api.get(`/api/users/${username}`);
 };
+export const getCategories = () => {
+  return api.get('/api/categories');
+};
+export const getReviewsByCategory = (category) => {
+  return api.get('/api/reviews', { params: { category: category } });
+};
+
+

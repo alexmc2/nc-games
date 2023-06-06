@@ -1,0 +1,20 @@
+.categories {
+    margin: 20px;
+    margin-top: 100px;
+  }
+  
+  .category {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .category h3 {
+    font-size: 20px;
+  }
+  
+  .category p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  

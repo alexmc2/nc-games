@@ -9,11 +9,11 @@ const AllReviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    console.log('Fetching reviews...');
+    
     api
       .getReviews()
       .then((res) => {
-        console.log('Fetched reviews');
+        
 
         setReviews(res.data.reviews);
         setIsLoading(false);

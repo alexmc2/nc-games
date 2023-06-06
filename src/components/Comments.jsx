@@ -14,7 +14,7 @@ const Comments = ({ reviewId }) => {
     setIsCommentsLoading(true);
     getCommentsByReviewId(reviewId)
       .then((res) => {
-        console.log('Comments fetched: ', res.data.comments);
+        
         setComments(res.data.comments);
         setIsCommentsLoading(false);
       })
