@@ -1,21 +1,17 @@
 .reviews-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
 
-
   width: 75%;
- 
-  justify-content: center; 
 
-  
-  
-
-
-  
+  justify-content: center;
 
   padding-top: 10vh;
-
 }
 
-
+@media (min-width: 600px) {
+  .reviews-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

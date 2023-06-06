@@ -27,6 +27,7 @@ const SingleReview = () => {
   }
 
   return (
+    
     <div className="single-review-page">
       <div className="game-review">
         <img src={review.review_img_url} alt={review.title} />

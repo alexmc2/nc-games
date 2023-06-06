@@ -35,6 +35,7 @@ const PostComment = ({ setComments, setIsPosting, setPostError }) => {
     <form id="comment-form" onSubmit={handleSubmit} className="comment-card">
       <div>
         <p>Post a comment</p>
+        <div>
         <label htmlFor="username">Enter your name: </label>
         <input
           id="username"
@@ -45,6 +46,8 @@ const PostComment = ({ setComments, setIsPosting, setPostError }) => {
             setNewComment({ ...comment, username: e.target.value });
           }}
         />
+        </div>
+        <div>
         <label htmlFor="body">Your comment: </label>
         <textarea
           id="body"
@@ -55,6 +58,7 @@ const PostComment = ({ setComments, setIsPosting, setPostError }) => {
             setNewComment({ ...comment, body: e.target.value });
           }}
         />
+        </div>
         <button disabled={setIsPosting}>submit</button>
       </div>
     </form>
