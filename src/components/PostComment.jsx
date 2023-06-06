@@ -59,7 +59,7 @@ const PostComment = ({ setComments, setIsPosting, setPostError }) => {
           }}
         />
         </div>
-        {/* <button disabled={setIsPosting}>submit</button> */}
+        <button disabled={setIsPosting}>submit</button>
       </div>
     </form>
   );
