@@ -1,0 +1,45 @@
+.sort-form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 1rem;
+}
+
+.sort-form label {
+  color: #333333b2;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sort-form select {
+  width: 100%;
+  max-width: 35vw;
+  height: 3.2vh;
+  background: #fffefeb9;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #333;
+  padding: 0.2rem;
+  transition: background-color 0.2s ease-in-out;
+  outline: none;
+}
+
+.sort-form select:hover {
+  background-color: #00000009;
+  outline: none;
+}
+
+@media (min-width: 600px) {
+  .sort-form {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .sort-form select {
+    max-width: 10rem;
+  }
+}

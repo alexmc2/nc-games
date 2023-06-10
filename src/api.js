@@ -4,9 +4,15 @@ const api = axios.create({
   baseURL: 'https://game-reviews-m0nu.onrender.com',
 });
 
-export const getReviews = () => {
-  return api.get('/api/reviews');
+export const getReviews = (sortBy, order) => {
+  return api.get('/api/reviews', {
+    params: {
+      sort_by: sortBy,
+      order: order,
+    },
+  });
 };
+
 export const getReviewById = (id) => {
   return api.get(`/api/reviews/${id}`);
 };
@@ -36,5 +42,3 @@ export const getCategories = () => {
 export const getReviewsByCategory = (category) => {
   return api.get('/api/reviews', { params: { category: category } });
 };
-
-
