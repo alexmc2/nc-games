@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getReviewsByCategory } from '../api';
 import ReviewCard from './ReviewCard';
-import '../styles/AllReviews.css'
-import '../styles/ReviewCard.css'
+import '../styles/AllReviews.css';
+import '../styles/CategoryPage.css';
 
 const CategoryPage = () => {
   const { category } = useParams();
@@ -35,14 +35,15 @@ const CategoryPage = () => {
 
   return (
     <>
-    <h2>Reviews by category: {category}</h2>
-    <div className="reviews-container">
-      
+      <h2 className="category-heading">
+        {category.charAt(0).toUpperCase() + category.slice(1)}
+      </h2>
+
+      <div className="reviews-container">
         {reviews.map((review) => (
           <ReviewCard key={review.review_id} review={review} />
         ))}
-     
-    </div>
+      </div>
     </>
   );
 };

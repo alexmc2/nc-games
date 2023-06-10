@@ -1,11 +1,11 @@
-import '../styles/Header.css'
+import '../styles/Header.css';
 
 const Header = () => {
-    return (
-      <header className="header">
-        <h1>HOUSE OF GAMES</h1>
-      </header>
-    );
-  };
-  
-  export default Header
+  return (
+    <header className="header">
+      <h1>HOUSE OF GAMES</h1>
+    </header>
+  );
+};
+
+export default Header;

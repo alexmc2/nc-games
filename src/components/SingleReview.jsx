@@ -27,25 +27,26 @@ const SingleReview = () => {
   }
 
   return (
-    <div className="single-review-page">
-      <div className="game-review">
-        <img src={review.review_img_url} alt={review.title} />
-        <div className="review-content">
-          <h2>{review.title}</h2>
-          <p>By: {review.owner}</p>
-          <p>Created at: {review.created_at}</p>
-          <div className="review-body-and-votes">
-            <p>{review.review_body}</p>
-            <VoteHandler review_id={review_id} votes={review.votes} />
+    <div className="single-review-page-container">
+      <div className="single-review-page">
+        <div className="game-review">
+          <img src={review.review_img_url} alt={review.title} />
+          <div className="review-content">
+            <h2>{review.title}</h2>
+            <p>By: {review.owner}</p>
+            <p>Created at: {review.created_at}</p>
+            <div className="review-body-and-votes">
+              <p>{review.review_body}</p>
+              <VoteHandler review_id={review_id} votes={review.votes} />
+            </div>
+            <p>Comments: {review.comment_count}</p>
+            <p>Designer: {review.designer}</p>
           </div>
-          <p>Comments: {review.comment_count}</p>
-          <p>Designer: {review.designer}</p>
         </div>
+        <Comments reviewId={review_id} />
       </div>
-      <Comments reviewId={review_id} />
     </div>
   );
 };
 
 export default SingleReview;
-
